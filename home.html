@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <title>Helau</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="agency, creative">
+    <meta name="author" content="Nesvara">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="layouts/silicon/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="layouts/silicon/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="layouts/silicon/favicon/favicon-16x16.png">
+
+    <link rel="mask-icon" href="layouts/silicon/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="layouts/silicon/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="layouts/silicon/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="layouts/silicon/vendor/boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" media="screen" href="assets/fonts/bootstrap-icon.css" />
+    <link rel="stylesheet" media="screen" href="layouts/silicon/vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" media="screen" href="layouts/silicon/vendor/lightgallery/css/lightgallery-bundle.min.css" />
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="layouts/silicon/css/theme.css">
+
+    <link rel="stylesheet" media="screen" href="assets/css/helau.css">
+
+    <!-- Page loading styles -->
+    <style>
+        .page-loading {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all .4s .2s ease-in-out;
+            transition: all .4s .2s ease-in-out;
+            background-color: #fff;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 9999;
+        }
+
+        .dark-mode .page-loading {
+            background-color: #0b0f19;
+        }
+
+        .page-loading.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .page-loading-inner {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+            opacity: 0;
+        }
+
+        .page-loading.active>.page-loading-inner {
+            opacity: 1;
+        }
+
+        .page-loading-inner>span {
+            display: block;
+            font-size: 1rem;
+            font-weight: normal;
+            color: #9397ad;
+        }
+
+        .dark-mode .page-loading-inner>span {
+            color: #fff;
+            opacity: .6;
+        }
+
+        .page-spinner {
+            display: inline-block;
+            width: 2.75rem;
+            height: 2.75rem;
+            margin-bottom: .75rem;
+            vertical-align: text-bottom;
+            border: .15em solid #b4b7c9;
+            border-right-color: transparent;
+            border-radius: 50%;
+            -webkit-animation: spinner .75s linear infinite;
+            animation: spinner .75s linear infinite;
+        }
+
+        .dark-mode .page-spinner {
+            border-color: rgba(255, 255, 255, .4);
+            border-right-color: transparent;
+        }
+
+        @-webkit-keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+        let mode = window.localStorage.getItem('mode'),
+            root = document.getElementsByTagName('html')[0];
+        if (mode !== null && mode === 'dark') {
+            root.classList.add('dark-mode');
+        } else {
+            root.classList.remove('dark-mode');
+        }
+    </script>
+
+    <!-- Page loading scripts 
+  <script>
+    (function () {
+      window.onload = function () {
+        const preloader = document.querySelector('.page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function () {
+          preloader.remove();
+        }, 1000);
+      };
+    })();
+  </script>-->
+
+    <!-- Google Tag Manager -->
+</head>
+
+
+<!-- Body -->
+
+<body>
+
+    <!-- Google Tag Manager (noscript)-->
+
+    <!-- Page loading spinner
+  <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div><span>Loading...</span>
+    </div>
+  </div> -->
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4 pb-lg-5">
+        <div class="container pt-lg-4">
+            <p class="nav d-block fs-xs text-center text-md-center pb-2 pb-lg-0 mb-0">
+                &copy; All rights reserved. Made by <strong>irv</strong>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+        <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+        <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="layouts/silicon/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="layouts/silicon/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="layouts/silicon/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="layouts/silicon/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="layouts/silicon/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="layouts/silicon/vendor/rellax/rellax.min.js"></script>
+    <script src="layouts/silicon/vendor/cleave.js/dist/cleave.min.js"></script>
+    <script src="layouts/silicon/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+    <!-- Vendor Scripts -->
+    <script src="layouts/silicon/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="layouts/silicon/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="layouts/silicon/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="layouts/silicon/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="layouts/silicon/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="layouts/silicon/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="layouts/silicon/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="layouts/silicon/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="layouts/silicon/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="layouts/silicon/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="layouts/silicon/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+
+    <!-- Main Theme Script -->
+    <script src="layouts/silicon/js/theme.min.js"></script>
+
+
+</body>
+
+
+</html>
